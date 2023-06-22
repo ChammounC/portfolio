@@ -57,8 +57,12 @@ const Uses = () => {
                                     </li>
                                     <li>
                                         For Backend I use{' '}
-                                        <Link href="https://rustlang.org">
-                                            ExpressJS and NodeJS
+                                        <Link href="https://expressjs.com/">
+                                            ExpressJS
+                                        </Link>
+                                        {' '}and{' '}
+                                        <Link href="https://nodejs.org/">
+                                            NodeJS
                                         </Link>
                                         , when used together, it simplifies it's APIs and
                                         adds helpful new features. It makes it easier to
@@ -87,7 +91,7 @@ const Uses = () => {
                                         css-in-js solutions like styled-components, but
                                         these days I'm using vanilla CSS with{' '}
                                         <Link href="https://postcss.org/">PostCSS</Link>{' '}
-                                        to get upcoming CSS features today.
+                                        to get upcoming CSS features.
                                     </li>
                                     <li>
                                         For Javascript animations I use{' '}

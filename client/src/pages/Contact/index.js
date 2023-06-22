@@ -64,7 +64,7 @@ const Contact = () => {
                 setSending(true)
 
                 const response = await fetch(
-                    'https://portfolio-email-poaw.onrender.com/mail',
+                    process.env.REACT_APP_URL,
                     {
                         method: 'POST',
                         mode: 'cors',

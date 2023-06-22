@@ -7,15 +7,14 @@ import DecoderText from 'components/DecoderText'
 import Divider from 'components/Divider'
 import Image from 'components/Image'
 import Section from 'components/Section'
-import ProfileImg from 'assets/slient-boy.png'
 import ProfileImgPlaceholder from 'assets/profile-placeholder.jpg'
+import Blush from 'assets/blush.jpg';
 import { reflow } from 'utils/transition'
 import { media } from 'utils/style'
 import { ReactComponent as KatakanaProfile } from 'assets/katakana-profile.svg'
 import Heading from 'components/Heading'
 import Text from 'components/Text'
 import './Profile.css'
-
 
 const ProfileText = ({ status, titleId }) => (
     <Fragment>
@@ -33,10 +32,11 @@ const ProfileText = ({ status, titleId }) => (
             )}
             size="l"
         >
-            I'm Chammoun, building Frontend and
-            Mobile applications is what I love. Because I'm at ease with programming,
-            I can quickly validate my experience. Visit my{' '}
-            <Link href="/uses">uses page</Link> if you're curious about the projects I have built.
+            I'm Chammoun, building Frontend and Mobile applications is what I love.
+            Because I'm at ease with programming, I can quickly validate my experience.
+            Visit my <Link href="https://github.com/Chammounc">github page</Link> if
+            you're curious about the projects I have built or my{' '}
+            <Link href="/uses">uses page</Link> to know more about the tools I normally use for development.
         </Text>
         <Text
             className={classNames(
@@ -102,7 +102,7 @@ const Profile = ({ id, visible, sectionRef }) => {
                                     reveal
                                     delay={100}
                                     placeholder={ProfileImgPlaceholder}
-                                    srcSet={`${ProfileImg} 480w, ${ProfileImg} 960w`}
+                                    srcSet={`${ProfileImgPlaceholder} 480w, ${ProfileImgPlaceholder} 960w`}
                                     sizes={`(max-width: ${media.mobile}px) 100vw, 480px`}
                                     alt="To shy to upload my own picture hehehehehe"
                                 />

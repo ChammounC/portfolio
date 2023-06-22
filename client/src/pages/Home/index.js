@@ -8,18 +8,13 @@ import { usePrefersReducedMotion, useRouteTransition } from 'hooks'
 import { useLocation } from 'react-router-dom'
 import iphone11 from 'assets/iphone-11.glb'
 import macbookPro from 'assets/macbook-pro.glb'
-import WSF from 'assets/WSF.jpg'
-import WSF_Placeholder from 'assets/WSF-blurred.jpg'
-import chess from 'assets/chess-1.jpg'
-import pf from 'assets/botto-profile.jpg'
-import chess_ph from 'assets/chess-1_blurred.jpg'
-import pfph from 'assets/botto-profile_blurred.jpg'
-import etrl from 'assets/Etrl.jpg'
-import etrlph from 'assets/Etrlph.jpg'
-import wfy1 from 'assets/WFY1.jpg'
-import wfy1ph from 'assets/WFY1ph.jpg'
-import wfy2 from 'assets/WFY2.jpg'
-import wfy2ph from 'assets/WFY2ph.jpg'
+import mmojo1 from 'assets/mmojo1.png';
+import mmojo2 from 'assets/mmojo2.png';
+import mmojo1ph from 'assets/mmojo1ph.jpg';
+import mmojo2ph from 'assets/mmojo2ph.jpg';
+import ts3js from 'assets/ts3js.png';
+import ts3jsph from 'assets/ts3jsph.jpg';
+import bijou from 'assets/bijou.png';
 
 import './index.css'
 
@@ -35,7 +30,6 @@ const Home = () => {
     const projectOne = useRef()
     const projectTwo = useRef()
     const projectThree = useRef()
-    const projectFour = useRef()
     const details = useRef()
     const prefersReducedMotion = usePrefersReducedMotion()
 
@@ -45,7 +39,6 @@ const Home = () => {
             projectOne,
             projectTwo,
             projectThree,
-            projectFour,
             details,
         ]
 
@@ -167,18 +160,18 @@ const Home = () => {
                 sectionRef={projectOne}
                 visible={visibleSections.includes(projectOne.current)}
                 index={1}
-                title="Ethereal"
-                description="Simple yet fast general-purpose programming language."
+                title="tShirt3JS"
+                description="T-Shirt Designing with ThreeJS and OpenAI's DALLE 2"
                 buttonText="View Project"
-                buttonLink="https://ethereal-docs.vercel.app/"
+                buttonLink="https://dalle-ai-threejs.netlify.app/"
                 model={{
                     type: 'laptop',
-                    alt: 'Ethereal',
+                    alt: 'tShirt3JS',
                     textures: [
                         {
-                            src: etrl,
-                            srcSet: `${etrl} 980w, ${etrl} 1376w`,
-                            placeholder: etrlph,
+                            src: ts3js,
+                            srcSet: `${ts3js} 980w, ${ts3js} 1376w`,
+                            placeholder: ts3jsph,
                         },
                     ],
                 }}
@@ -189,23 +182,23 @@ const Home = () => {
                 sectionRef={projectTwo}
                 visible={visibleSections.includes(projectTwo.current)}
                 index={2}
-                title="Weebify"
+                title="Manga Mojo"
                 description="Flutter App to fetch Anime and Manga Details"
                 buttonText="View Project"
-                buttonLink="https://github.com/AlenVelocity/Weebify"
+                buttonLink="https://github.com/ChammounC/manga_mojo"
                 model={{
                     type: 'phone',
-                    alt: 'Weebify',
+                    alt: 'Manga Mojo',
                     textures: [
                         {
-                            src: wfy2,
-                            srcSet: `${wfy2} 254w, ${wfy2} 508w`,
-                            placeholder: wfy2ph,
+                            src: mmojo2,
+                            srcSet: `${mmojo2} 254w, ${mmojo2} 508w`,
+                            placeholder: mmojo2ph,
                         },
                         {
-                            src: wfy1,
-                            srcSet: `${wfy1} 254w, ${wfy1} 508w`,
-                            placeholder: wfy1ph,
+                            src: mmojo1,
+                            srcSet: `${mmojo1} 254w, ${mmojo1} 508w`,
+                            placeholder: mmojo1ph,
                         },
                     ],
                 }}
@@ -215,23 +208,23 @@ const Home = () => {
                 sectionRef={projectThree}
                 visible={visibleSections.includes(projectThree.current)}
                 index={3}
-                title="Wa-Sticker-Formatter"
-                description="WhatsApp Sticker Creator and Formatter"
+                title="Bijou"
+                description="A French Inspired Restaurant Website"
                 buttonText="View Project"
-                buttonLink="https://github.com/AlenSaito1/wa-sticker-formatter"
+                buttonLink="https://bijou.netlify.app/"
                 model={{
                     type: 'laptop',
-                    alt: 'Wa-Sticker-Formatter',
+                    alt: 'bijou',
                     textures: [
                         {
-                            src: WSF,
-                            srcSet: `${WSF} 980w, ${WSF} 1376w`,
-                            placeholder: WSF_Placeholder,
+                            src: bijou,
+                            srcSet: `${bijou} 980w, ${bijou} 1376w`,
+                            placeholder: bijou,
                         },
                     ],
                 }}
             />
-            <ProjectSummary
+            {/* <ProjectSummary
                 id="project-4"
                 alternate
                 sectionRef={projectFour}
@@ -257,7 +250,7 @@ const Home = () => {
                         },
                     ],
                 }}
-            />
+            /> */}
 
             <Profile
                 sectionRef={details}
