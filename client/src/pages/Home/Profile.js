@@ -8,7 +8,6 @@ import Divider from 'components/Divider'
 import Image from 'components/Image'
 import Section from 'components/Section'
 import ProfileImgPlaceholder from 'assets/profile-placeholder.jpg'
-import Blush from 'assets/blush.jpg';
 import { reflow } from 'utils/transition'
 import { media } from 'utils/style'
 import { ReactComponent as KatakanaProfile } from 'assets/katakana-profile.svg'
