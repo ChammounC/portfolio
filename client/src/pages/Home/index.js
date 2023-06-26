@@ -15,6 +15,12 @@ import mmojo2ph from 'assets/mmojo2ph.jpg';
 import ts3js from 'assets/ts3js.png';
 import ts3jsph from 'assets/ts3jsph.jpg';
 import bijou from 'assets/bijou.png';
+import blue1 from 'assets/blue1.png';
+import blue1ph from 'assets/blue1ph.jpg';
+import blue2 from 'assets/blue2.png';
+import blue2ph from 'assets/blue2ph.jpg';
+import blue3 from 'assets/blue3.png';
+import blue3ph from 'assets/blue3ph.jpg';
 
 import './index.css'
 
@@ -30,6 +36,7 @@ const Home = () => {
     const projectOne = useRef()
     const projectTwo = useRef()
     const projectThree = useRef()
+    const projectFour = useRef()
     const details = useRef()
     const prefersReducedMotion = usePrefersReducedMotion()
 
@@ -39,6 +46,7 @@ const Home = () => {
             projectOne,
             projectTwo,
             projectThree,
+            projectFour,
             details,
         ]
 
@@ -224,33 +232,38 @@ const Home = () => {
                     ],
                 }}
             />
-            {/* <ProjectSummary
+            <ProjectSummary
                 id="project-4"
                 alternate
                 sectionRef={projectFour}
                 visible={visibleSections.includes(projectFour.current)}
                 index={4}
-                title="Void"
-                description="Uility bot for Whatsapp Group chats"
+                title="Blue"
+                description="Find my device app for Android"
                 buttonText="View Project"
-                buttonLink="https://github.com/Synthesized-infinity/whatsapp-botto-void"
+                buttonLink="https://github.com/ChammounC/blue"
                 model={{
-                    type: 'phone',
-                    alt: 'Void',
+                    type: '3phones',
+                    alt: 'Blue',
                     textures: [
                         {
-                            src: chess,
-                            srcSet: `${chess} 254w, ${chess} 508w`,
-                            placeholder: chess_ph,
+                            src: blue1,
+                            srcSet: `${blue1} 254w, ${blue1} 508w`,
+                            placeholder: blue1ph,
                         },
                         {
-                            src: pf,
-                            srcSet: `${pf} 254w, ${pf} 508w`,
-                            placeholder: pfph,
+                            src: blue2,
+                            srcSet: `${blue2} 254w, ${blue2} 508w`,
+                            placeholder: blue2ph,
+                        },
+                        {
+                            src: blue3,
+                            srcSet: `${blue3} 254w, ${blue3} 508w`,
+                            placeholder: blue3ph,
                         },
                     ],
                 }}
-            /> */}
+            />
 
             <Profile
                 sectionRef={details}

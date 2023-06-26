@@ -166,6 +166,57 @@ const ProjectSummary = ({
                     />
                 </Fragment>
             )}
+            {model.type === '3phones' && (
+                <Fragment>
+                    <KatakanaProject
+                        style={{ '--opacity': svgOpacity }}
+                        className={classNames(
+                            'project-summary__svg',
+                            'project-summary__svg--phone',
+                            `project-summary__svg--${status}`,
+                            {
+                                'project-summary__svg--light': theme.themeId === 'light',
+                            }
+                        )}
+                    />
+                    <Model
+                        className={classNames(
+                            'project-summary__model',
+                            'project-summary__model--3phones'
+                        )}
+                        alt={model.alt}
+                        cameraPosition={{ x: 0, y: 0, z: 11.5 }}
+                        showDelay={500}
+                        show={isVisible(status)}
+                        models={[
+                            {
+                                ...deviceModels.phone,
+                                position: { x: -1.6, y: 1, z: 0 },
+                                texture: {
+                                    ...model.textures[0],
+                                    sizes: phoneSizes,
+                                },
+                            },
+                            {
+                                ...deviceModels.phone,
+                                position: { x: 0, y: 1, z: 1.5},
+                                texture: {
+                                    ...model.textures[1],
+                                    sizes: phoneSizes,
+                                },
+                            },
+                            {
+                                ...deviceModels.phone,
+                                position: { x: 1.6, y: 1, z: 0 },
+                                texture: {
+                                    ...model.textures[2],
+                                    sizes: phoneSizes,
+                                },
+                            },
+                        ]}
+                    />
+                </Fragment>
+            )}
         </div>
     )
 

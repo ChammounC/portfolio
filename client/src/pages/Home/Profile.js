@@ -31,7 +31,7 @@ const ProfileText = ({ status, titleId }) => (
             )}
             size="l"
         >
-            I'm Chammoun, building Frontend and Mobile applications is what I love.
+            I'm Chammoun, and building Frontend and Mobile applications is what I love.
             Because I'm at ease with programming, I can quickly validate my experience.
             Visit my <Link href="https://github.com/Chammounc">github page</Link> if
             you're curious about the projects I have built or my{' '}

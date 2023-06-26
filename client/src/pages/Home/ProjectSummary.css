@@ -130,8 +130,32 @@
 }
 
 .project-summary__model--phone {
-  --width: 116%;
+  --width: 108%;
   --aspectRatio: 10 / 7;
+
+  top: 5%;
+  left: -10%;
+
+  @media (--mediaDesktop) {
+    & {
+      --width: 108%;
+
+      left: 0;
+    }
+  }
+
+  @media (--mediaTablet) {
+    & {
+      --width: 108%;
+
+      left: 0;
+    }
+  }
+}
+
+.project-summary__model--3phones {
+  --width: 108%;
+  --aspectRatio: 10 / 8;
 
   top: 5%;
   left: -10%;
