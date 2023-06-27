@@ -24,8 +24,12 @@ const Uses = lazy(() => import('pages/Uses'))
 export const [AppContext, TransitionContext] = [createContext(), createContext()]
 
 const repoPrompt = `
-__  __  __
-\u005C \u005C \u005C \u005C \u005C\u2215\n \u005C \u005C\u2215\u005C \u005C\n  \u005C\u2215  \u005C\u2215
+    ██████ 
+   ██     ██
+   ██       
+   ██       
+   ██     ██
+    ██████ 
 \n\nTaking a peek huh?
 `
 
