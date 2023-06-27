@@ -187,26 +187,31 @@ const Home = () => {
             <ProjectSummary
                 id="project-2"
                 alternate
-                sectionRef={projectTwo}
-                visible={visibleSections.includes(projectTwo.current)}
+                sectionRef={projectFour}
+                visible={visibleSections.includes(projectFour.current)}
                 index={2}
-                title="Manga Mojo"
-                description="Flutter App to fetch Anime and Manga Details"
+                title="Blue"
+                description="Find my device app for Android"
                 buttonText="View Project"
-                buttonLink="https://github.com/ChammounC/manga_mojo"
+                buttonLink="https://github.com/ChammounC/blue"
                 model={{
-                    type: 'phone',
-                    alt: 'Manga Mojo',
+                    type: '3phones',
+                    alt: 'Blue',
                     textures: [
                         {
-                            src: mmojo2,
-                            srcSet: `${mmojo2} 254w, ${mmojo2} 508w`,
-                            placeholder: mmojo2ph,
+                            src: blue1,
+                            srcSet: `${blue1} 254w, ${blue1} 508w`,
+                            placeholder: blue1ph,
                         },
                         {
-                            src: mmojo1,
-                            srcSet: `${mmojo1} 254w, ${mmojo1} 508w`,
-                            placeholder: mmojo1ph,
+                            src: blue2,
+                            srcSet: `${blue2} 254w, ${blue2} 508w`,
+                            placeholder: blue2ph,
+                        },
+                        {
+                            src: blue3,
+                            srcSet: `${blue3} 254w, ${blue3} 508w`,
+                            placeholder: blue3ph,
                         },
                     ],
                 }}
@@ -235,31 +240,26 @@ const Home = () => {
             <ProjectSummary
                 id="project-4"
                 alternate
-                sectionRef={projectFour}
-                visible={visibleSections.includes(projectFour.current)}
+                sectionRef={projectTwo}
+                visible={visibleSections.includes(projectTwo.current)}
                 index={4}
-                title="Blue"
-                description="Find my device app for Android"
+                title="Manga Mojo"
+                description="Flutter App to fetch Anime and Manga Details"
                 buttonText="View Project"
-                buttonLink="https://github.com/ChammounC/blue"
+                buttonLink="https://github.com/ChammounC/manga_mojo"
                 model={{
-                    type: '3phones',
-                    alt: 'Blue',
+                    type: 'phone',
+                    alt: 'Manga Mojo',
                     textures: [
                         {
-                            src: blue1,
-                            srcSet: `${blue1} 254w, ${blue1} 508w`,
-                            placeholder: blue1ph,
+                            src: mmojo2,
+                            srcSet: `${mmojo2} 254w, ${mmojo2} 508w`,
+                            placeholder: mmojo2ph,
                         },
                         {
-                            src: blue2,
-                            srcSet: `${blue2} 254w, ${blue2} 508w`,
-                            placeholder: blue2ph,
-                        },
-                        {
-                            src: blue3,
-                            srcSet: `${blue3} 254w, ${blue3} 508w`,
-                            placeholder: blue3ph,
+                            src: mmojo1,
+                            srcSet: `${mmojo1} 254w, ${mmojo1} 508w`,
+                            placeholder: mmojo1ph,
                         },
                     ],
                 }}
