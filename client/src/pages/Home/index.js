@@ -187,8 +187,8 @@ const Home = () => {
             <ProjectSummary
                 id="project-2"
                 alternate
-                sectionRef={projectFour}
-                visible={visibleSections.includes(projectFour.current)}
+                sectionRef={projectTwo}
+                visible={visibleSections.includes(projectTwo.current)}
                 index={2}
                 title="Blue"
                 description="Find my device app for Android"
@@ -240,8 +240,8 @@ const Home = () => {
             <ProjectSummary
                 id="project-4"
                 alternate
-                sectionRef={projectTwo}
-                visible={visibleSections.includes(projectTwo.current)}
+                sectionRef={projectFour}
+                visible={visibleSections.includes(projectFour.current)}
                 index={4}
                 title="Manga Mojo"
                 description="Flutter App to fetch Anime and Manga Details"
