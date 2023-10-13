@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
-  "homepage": "https://chammoun.dev",
+  "homepage": "https://chammounc.github.io",
   "description": "Portfolio site for Chammoun Chakhap",
   "repository": "https://github.com/Chammounc/portfolio.git",
   "author": "Chammoun Chakhap",
@@ -12,6 +12,7 @@
     "@testing-library/react": "^14.0.0",
     "@testing-library/user-event": "^14.4.3",
     "enzyme": "^3.11.0",
+    "gh-pages": "^6.0.0",
     "mdx-loader": "^3.0.2",
     "prettier": "^2.8.8",
     "react-snap": "1.23.0",
@@ -34,6 +35,8 @@
     "three": "^0.126.0"
   },
   "scripts": {
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "postbuild": "react-snap",
